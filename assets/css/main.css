@@ -72,11 +72,106 @@ input, select, textarea {
 	appearance: none;
 }
 
-img {
-	display: flex;
+
+
+header h1 img {
 	width: 100%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: -10%;
+	border-radius: 5px;
 	object-fit: cover;
 }
+
+.title-top {
+	margin-top: -45%; /* Alinha verticalmente no centro da imagem */
+
+}
+
+.overlay-text {
+	position: absolute; /* Posiciona o texto em relação ao seu contexto*/
+	text-align: center;
+	font-family: "Limelight", sans-serif;
+  	font-weight: 400;
+  	font-style: normal; 
+  	top: 70%; /* Alinha verticalmente */
+	left: 50%; /* Alinha horizontalmente */
+	transform: translate(-50%, -50%); /* Corrige o alinhamento do texto */
+	color: rgb(132, 79, 237); /* Cor do texto */
+	text-shadow: #fdfdfd 0px 0px 10px; /* Sombra do texto */
+	font-size: 90px; /* Tamanho do texto */
+	/* background-color: rgba(0, 0, 0, 0.5); Fundo para melhorar a legibilidade do texto */
+	padding: 10px; /* Espaçamento interno do texto */
+	z-index: 10; /* Garante que o texto fique sobre a imagem */
+}
+
+.h3-titulo {
+	position: absolute; /* Posiciona o texto em relação ao seu contexto */
+	text-align: center;
+	top: 80%; /* Alinha verticalmente */
+	left: 50%; /* Alinha horizontalmente  */
+	transform: translate(-50%, -50%); /* Corrige o alinhamento do texto */
+	color: rgb(226, 127, 213); /* Cor do texto */
+	font-size: 30px; /* Tamanho do texto */
+	text-shadow: #fdfdfd 0px 0px 5px; /* Sombra do texto */
+	padding: 10px; /* Espaçamento interno do texto */
+	z-index: 10; /* Garante que o texto fique sobre a imagem */
+}
+
+
+.h2-categ {
+	color: rgb(132, 79, 237);
+	font-size: 30px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.h2-categ {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .title-top {
+        margin-top: -30%; /* Ajuste para telas menores */
+    }
+
+    .overlay-text {
+        font-size: 50px; /* Reduz o tamanho do texto */
+        top: 30%; /* Ajusta a posição vertical */
+    }
+
+    .h3-titulo {
+        font-size: 20px; /* Ajusta o tamanho do título */
+        top: 45%; /* Ajusta a posição */
+    }
+
+    .h2-categ {
+        font-size: 25px; /* Reduz o tamanho para telas menores */
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overlay-text {
+        font-size: 35px; /* Ajusta para telas menores */
+    }
+
+    .h3-titulo {
+        font-size: 18px;
+        top: 65%;
+    }
+
+    .h2-categ {
+        font-size: 20px;
+    }
+}
+
+
 
 /* Basic */
 
@@ -250,6 +345,7 @@ img {
 		h3 {
 			font-size: 0.8em;
 		}
+		
 
 	}
 
@@ -2856,6 +2952,7 @@ img {
 			}
 
 			#header .logo .symbol {
+				margin-top: -45%;
 				margin-right: 0.65em;
 			}
 
