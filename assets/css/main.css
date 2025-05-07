@@ -1,136 +1,70 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-body {
-	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
-}
-
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
+	vertical-align: baseline;
 }
 
 
-
-header h1 img {
-	width: 100%;
+.centralizaporra {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+  }
+  
+.texto-sobre-imagem {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+.texto-sobre-imagem img {
+	max-width: 80%;
 	height: auto;
-	max-width: 100%;
-	max-height: 100%;
-	margin-top: -15%;
-	border-radius: 5px;
-	object-fit: cover;
-}
-
-.title-top {
-	margin-top: -60%; /* Alinha verticalmente no centro da imagem */
-
-}
-
-.overlay-text {
-	position: absolute; /* Posiciona o texto em relação ao seu contexto*/
-	text-align: center;
-	font-family: "Limelight", sans-serif;
-  	font-weight: 400;
-  	font-style: normal; 
-  	top: 60%; /* Alinha verticalmente */
-	left: 50%; /* Alinha horizontalmente */
-	transform: translate(-50%, -50%); /* Corrige o alinhamento do texto */
-	color: rgb(132, 79, 237); /* Cor do texto */
-	text-shadow: #fdfdfd 0px 0px 10px; /* Sombra do texto */
-	font-size: 90px; /* Tamanho do texto */
-	/* background-color: rgba(0, 0, 0, 0.5); Fundo para melhorar a legibilidade do texto */
-	padding: 10px; /* Espaçamento interno do texto */
-	z-index: 10; /* Garante que o texto fique sobre a imagem */
-}
-
-.h3-titulo {
-	position: absolute; /* Posiciona o texto em relação ao seu contexto */
-	text-align: center;
-	top: 60%; /* Alinha verticalmente */
-	left: 50%; /* Alinha horizontalmente  */
-	transform: translate(-50%, -50%); /* Corrige o alinhamento do texto */
-	color: rgb(138, 39, 125); /* Cor do texto */
-	font-size: 20px; /* Ajusta o tamanho do texto */
-	text-shadow: #fdfdfd 0px 0px 5px; /* Sombra do texto */
-	padding: 10px; /* Espaçamento interno do texto */
-	z-index: 10; /* Garante que o texto fique sobre a imagem */
-}
-
-
+	display: block;
+  }
+  
+.texto-sobre-imagem h1 {
+	position: absolute;
+	color: rgb(255, 54, 178);
+	font-size: 3rem;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px rgba(255, 61, 242, 0.7);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+.texto-sobre-imagem p {
+	position: absolute;
+	color: rgb(255, 54, 178);
+	font-size: 3rem;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px rgba(255, 61, 242, 0.7);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
 .h2-categ {
 	background-color: #e4f3fb;
 	border-radius: 4px;
 	color: rgb(132, 79, 237);
 	font-size: 30px;
 	text-align: center;
-	margin-top: -10px;
-	margin-bottom: -20px;
+	margin-top: 10px;
+	margin-bottom: -70px;
 } 
 
-
+main{
+	padding: 100px;
+}
 
 @media screen and (max-width: 768px) {
 	.h2-categ {
@@ -173,8 +107,6 @@ header h1 img {
         font-size: 20px;
     }
 }
-
-
 
 /* Basic */
 
@@ -2681,7 +2613,7 @@ header h1 img {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
