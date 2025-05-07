@@ -1,8 +1,6 @@
 ```markdown
 # 🪐 Planeta Papel - Papelaria Online
 
-![Banner Planeta Papel](images/banner.jpg)
-
 **Projeto Integrador - Residência TIC Capacita+c Brasil**
 
 ## 📋 Sobre o Projeto
