@@ -324,7 +324,6 @@ main{
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
