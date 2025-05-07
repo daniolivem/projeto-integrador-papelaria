@@ -1,5 +1,3 @@
-Aqui está todo o conteúdo do `README.md` formatado para copiar e colar diretamente no seu arquivo:
-
 ```markdown
 # 🪐 Planeta Papel - Papelaria Online
 
