@@ -2681,7 +2681,7 @@ header h1 img {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -3437,3 +3437,14 @@ header h1 img {
 			}
 
 		}
+		.container {
+			display: flex;
+			justify-content: center; /* Centraliza horizontalmente */
+			align-items: center; /* Centraliza verticalmente (opcional) */
+			gap: 20px; /* Espaçamento entre as imagens */
+		  }
+		  
+		  img {
+			width: 200px; /* Tamanho das imagens (opcional) */
+			height: auto; /* Manter as proporções originais */
+		  }
