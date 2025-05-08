@@ -142,3 +142,4 @@ Você pode personalizar ainda mais adicionando:
 - Capturas de tela (screenshots)
 - GIFs demonstrando funcionalidades
 - Informações sobre deploys ou versão online
+```
