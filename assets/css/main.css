@@ -3442,6 +3442,7 @@ header h1 img {
 			justify-content: center; /* Centraliza horizontalmente */
 			align-items: center; /* Centraliza verticalmente (opcional) */
 			gap: 20px; /* Espaçamento entre as imagens */
+			
 		  }
 		  
 		  
@@ -3453,6 +3454,14 @@ header h1 img {
 			width: 300px; /* Tamanho desejado */
 			height: 250px; /* Tamanho desejado */
 			object-fit: contain; /* Ou object-fit: cover para preencher e cortar */
+
+			background-color: #f0f0f0; /* Cor de fundo desejada */
+  padding: 10px; /* Adiciona um pouco de espaço para o fundo */
+  border: 1px solid #ccc; /* Adiciona uma borda para maior visibilidade */
+
+  max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+  height: auto; /* Mantém as proporções da imagem */
+  
 		  }
 
 		  figcaption {
