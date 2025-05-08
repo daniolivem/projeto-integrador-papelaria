@@ -4,7 +4,8 @@
 Projeto Integrador - Residência TIC Capacita+c Brasil
 
 ## 📋 Sobre o Projeto
-A Planeta Papel é uma papelaria virtual desenvolvida como projeto integrador da residência em TIC. Partindo de um template do HTML5 UP, realizamos customizações para criar uma loja online de papelaria completa com:
+A Planeta Papel é uma papelaria virtual desenvolvida como projeto integrador da residência em TIC. 
+Partindo de um template do HTML5 UP, realizamos customizações para criar uma loja online de papelaria completa com:
 
 - Design moderno e totalmente responsivo
 - Navegação intuitiva por categorias de produtos
