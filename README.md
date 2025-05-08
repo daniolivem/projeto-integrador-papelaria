@@ -1,4 +1,4 @@
-```markdown
+
 # 🪐 Planeta Papel - Papelaria Online
 
 Projeto Integrador - Residência TIC Capacita+c Brasil
@@ -142,4 +142,3 @@ Você pode personalizar ainda mais adicionando:
 - Capturas de tela (screenshots)
 - GIFs demonstrando funcionalidades
 - Informações sobre deploys ou versão online
-```
