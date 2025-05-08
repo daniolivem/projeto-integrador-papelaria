@@ -1,7 +1,7 @@
 ```markdown
 # 🪐 Planeta Papel - Papelaria Online
 
-**Projeto Integrador - Residência TIC Capacita+c Brasil**
+Projeto Integrador - Residência TIC Capacita+c Brasil
 
 ## 📋 Sobre o Projeto
 A Planeta Papel é uma papelaria virtual desenvolvida como projeto integrador da residência em TIC. Partindo de um template do HTML5 UP, realizamos customizações para criar uma loja online de papelaria completa com:
@@ -23,24 +23,24 @@ A Planeta Papel é uma papelaria virtual desenvolvida como projeto integrador da
 |---------------------------------------|
 
 ## 🛠 Stack Tecnológica
-**Front-end:**
+Front-end:
 - ✔ HTML5 semântico
 - ✔ CSS3 com pré-processador SCSS
 - ✔ JavaScript 
 - ✔ Design Responsivo 
 
-**Recursos Utilizados:**
+Recursos Utilizados:
 - 🎨 Template HTML5 UP (modificado)
 - ✨ Font Awesome (ícones)
 - 🔤 Google Fonts (Limelight)
 - 🔄 Git/GitHub (controle de versão)
 
 ## 🎨 Design e Interface
-- **Cores:** Paleta suave em tons pastéis
-- **Tipografia:** 
+- Cores: Paleta suave em tons pastéis
+- Tipografia:
   - Limelight para títulos
   - Sans-serif para conteúdo
-- **Elementos:**
+- Elementos:
   - Favicon personalizado
   - Banner impactante
   - Cards de produtos visualmente atraentes
