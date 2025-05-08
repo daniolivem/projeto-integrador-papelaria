@@ -122,23 +122,4 @@ Este projeto utiliza um template do [HTML5 UP](https://html5up.net/) sob licenç
 *Projeto educacional sem fins comerciais. Todas as imagens são ilustrativas.*
 
 
-### **Instruções adicionais:**
-1. Crie um novo arquivo chamado `README.md` na raiz do seu projeto
-2. Copie todo este conteúdo
-3. Cole no arquivo criado
-4. Salve as alterações
 
-Destaques deste README:
-✅ Formatação Markdown completa  
-✅ Compatível com GitHub/GitLab  
-✅ Seções bem organizadas  
-✅ Emojis para melhor visualização  
-✅ Links funcionais  
-✅ Estrutura de arquivos detalhada  
-✅ Responsivo para leitura em qualquer dispositivo  
-
-Você pode personalizar ainda mais adicionando:
-- Badges de status do projeto
-- Capturas de tela (screenshots)
-- GIFs demonstrando funcionalidades
-- Informações sobre deploys ou versão online
