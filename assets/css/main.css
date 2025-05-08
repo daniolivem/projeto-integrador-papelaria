@@ -3444,7 +3444,13 @@ header h1 img {
 			gap: 20px; /* Espaçamento entre as imagens */
 		  }
 		  
-		  img {
-			width: 200px; /* Tamanho das imagens (opcional) */
-			height: auto; /* Manter as proporções originais */
+		  
+			/*img {
+			width: 200px;  Tamanho das imagens (opcional) */
+			/*height: auto;  Manter as proporções originais }  */
+		 
+		  .container img {
+			width: 300px; /* Tamanho desejado */
+			height: 250px; /* Tamanho desejado */
+			object-fit: contain; /* Ou object-fit: cover para preencher e cortar */
 		  }
