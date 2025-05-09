@@ -599,6 +599,7 @@ button {
     float: left;
     padding: 90px 0px 0px 0px;
     position: relative;
+    text-align: justify;
 }
 
 .services_taital {
@@ -638,6 +639,7 @@ button {
     width: 100%;
     float: left;
     border: 1px solid #fc9cc8;
+    border-radius: 4px;
     padding: 20px 30px;
     height: auto;
 }
@@ -647,6 +649,7 @@ button {
     float: left;
     font-size: 20px;
     color: #373736;
+    text-align: center;
 }
 
 .icon_img {
