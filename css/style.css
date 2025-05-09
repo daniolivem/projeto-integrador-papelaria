@@ -661,6 +661,21 @@ button {
     margin: 0px;
 }
 
+.whatsapp-button {
+    display: inline-block;
+    background-color: #ffb6c1; /* Cor rosa do segundo botão */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #f49cb3; /* Tom um pouco mais escuro ao passar o mouse */
+  }
 
 /* services section end */
 
