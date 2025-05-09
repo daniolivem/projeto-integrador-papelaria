@@ -236,8 +236,8 @@ button {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 3px 15px;
-    font-size: 18px;
+    padding: 3px 14px;
+    font-size: 16px;
     color: #222222;
     margin: 0px 6px;
 }
@@ -260,15 +260,15 @@ button {
 }
 
 .navbar {
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
 .login_bt {}
 
 .login_bt a {
-    font-size: 18px;
+    font-size: 16px;
     color: #222222;
-    padding: 0px 50px 0px 30px;
+    padding: 0px 50px 0px 3px;
 }
 
 .login_bt a:hover {
@@ -276,12 +276,12 @@ button {
 }
 
 .fa.fa-search.form-control-feedback {
-    font-size: 18px;
+    font-size: 16px;
     color: #222222;
 }
 
 .fa.fa-search.form-control-feedback:hover {
-    font-size: 18px;
+    font-size: 16px;
     color: #fc95c4;
 }
 
