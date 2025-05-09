@@ -263,7 +263,7 @@ button {
     padding: 15px 0px;
 }
 
-.login_bt {}
+
 
 .login_bt a {
     font-size: 18px;
@@ -394,6 +394,8 @@ button {
     border-radius: 4px;
 }
 
+
+
 .about_text {
     width: 100%;
     float: left;
@@ -408,7 +410,11 @@ button {
     font-size: 16px;
     color: #373736;
     margin-left: 0px;
+    
+    
 }
+
+
 
 .about_img {
     width: 100%;
