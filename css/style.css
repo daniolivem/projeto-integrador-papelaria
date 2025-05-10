@@ -434,7 +434,7 @@ button {
 /* about section end */
 
 
-/* cream section start */
+/* cream section start */ 
 
 .cream_section {
     width: 100%;
@@ -588,8 +588,156 @@ button {
     color: #faf8f9;
 }
 
+/* vini: carrossel de itens da loja */
 
-/* cream section end */
+.slider {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 100%;
+    text-align: center;
+    border: solid red;
+
+}
+
+#slider input [type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 1%;
+    border: 3px solid #fc9cc8;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+    border: solid green;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+
+#slide5:checked ~ #slides .inner {
+    margin-left: -400%;
+}
+
+#slide6:checked ~ #slides .inner {
+    margin-left: -500%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier ease;
+    width: 600%; /* vini: lembrar-me de ajustar isso */
+    line-height: 0;
+    height: 10%;
+    border: solid black;
+}
+
+#slides .slide {
+    width: 16.65%; /*vini: lembrar-me de ajustar */
+    float: left;
+    display: block;
+    height: 100%;
+    color: #fff;
+}
+
+#slides .slide_1 {
+    background: #00171f;
+}
+
+#slides .slide_2 {
+    background: #4eb3d4;
+}
+
+#slides .slide_3 {
+    background: #294f5c;
+}
+
+#slides .slide_4 {
+    background: #89cee4;
+}
+
+#slides .slide_5 {
+    background: #083240;
+}
+
+#slides .slide_6 {
+    background: #12aee2;
+}
+
+.slide-content {
+    padding: 10%;
+    border: solid blue;
+}
+
+#controls {
+    margin: -130px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2), 
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(6),
+#slide6:checked ~ #controls label:nth-child(1) {
+    background: url('../images/icons/caret-right.png') no-repeat;
+    float: right;
+    border: solid coral;
+    display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(1), 
+#slide2:checked ~ #controls label:nth-last-child(6), 
+#slide3:checked ~ #controls label:nth-last-child(5),
+#slide4:checked ~ #controls label:nth-last-child(4),
+#slide5:checked ~ #controls label:nth-last-child(3),
+#slide6:checked ~ #controls label:nth-last-child(2) {
+    background: url('../images/icons/caret-left.png') no-repeat;
+    float: left;
+    margin: 0 0 0 -50px; /* vini: ajustar como os demais */
+    border: solid coral;
+    display: block;
+}
+
+
+/* cream section end */ 
 
 
 /* services section start */
