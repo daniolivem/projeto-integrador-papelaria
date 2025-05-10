@@ -89,7 +89,7 @@ Entre em contato com nossa equipe:
 - 💻 Repositório: [GitHub do Projeto](https://github.com/daniolivem/projeto-integrador-papelaria)
 
 ## 📄 **Licença**
-Este projeto utiliza um template do [HTML5 UP](https://html5up.net/) sob licença [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/).
+Este projeto utiliza um template do [ThemeWagon](https://themewagon.com/) sob licença [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/).
 
 ---
 
