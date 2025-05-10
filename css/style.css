@@ -404,8 +404,18 @@ button {
     margin-left: 0px;
 }
 
+#corpink{
+    color:#ec5f85;
+}
 
-
+.about_text2{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color:#ec5f85;
+    margin-left: 0px;
+    text-align: justify;
+}
 
 
 .about_img {
