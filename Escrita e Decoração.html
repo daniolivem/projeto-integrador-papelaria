@@ -176,20 +176,24 @@
 
       <!--Carlos Aditando-->
       <!-- Botão do carrinho flutuante -->
-<div class="carrinho-container" onclick="toggleCarrinho()">
-    <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrinho">
-</div>
+      <div class="carrinho-container" onclick="toggleCarrinho()">
+         <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrinho">
+      </div>
 
-<!-- Painel do carrinho -->
-<div class="carrinho-panel" id="carrinhoPanel">
-    <h3>Carrinho</h3>
-    <div class="carrinho-itens-container">
-        <div id="itensCarrinho"></div>
-    </div>
-    <div class="total-compra" id="totalCompra">Total: R$0,00</div>
-    <button onclick="finalizarCompra()" class="finalizarCompra">Finalizar Compra</button>
-</div>
+      <!-- Painel do carrinho -->
+      <div class="carrinho-panel" id="carrinhoPanel">
+         <h3>Carrinho</h3>
 
-<script src="js/carrinho.js"></script>
-   </body>
+         <div class="carrinho-itens-container">
+            <div id="itensCarrinho">
+               <!-- Itens serão inseridos aqui -->
+            </div>
+         </div>
+
+         <div class="total-compra" id="totalCompra">Total: R$0,00</div>
+         <button onclick="finalizarCompra()" class="finalizarCompra">Finalizar Compra</button>
+      </div>
+
+      <script src="js/carrinho.js"></script>
+</body>
 </html>
