@@ -101,7 +101,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -146,7 +146,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -518,14 +518,14 @@ button {
 .cream_box {
     width: 100%;
     float: left;
-    background-image: linear-gradient( 0deg, #ffffff 37%, #f2f2f0 37%);
+    background-image: linear-gradient(0deg, #ffffff 37%, #f2f2f0 37%);
     height: auto;
     padding: 20px;
     box-shadow: 0px 0px 20px 10px #ededec;
 }
 
 .cream_box:hover {
-    background-image: linear-gradient( 0deg, #ffffff 37%, #faf0c7 37%);
+    background-image: linear-gradient(0deg, #ffffff 37%, #faf0c7 37%);
 }
 
 .cream_img {
@@ -554,29 +554,6 @@ button {
     color: #373736;
     text-align: center;
     font-weight: bold;
-}
-
-.cart_bt {
-    width: 150px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.cart_bt a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    text-align: center;
-    border: 1px solid #fc95c4;
-    color: #fc95c4;
-    padding: 8px 0px;
-    border-radius: 40px;
-}
-
-.cart_bt a:hover {
-    border: 1px solid #373736;
-    color: #373736;
 }
 
 .seemore_bt {
@@ -882,7 +859,8 @@ button {
 
 .whatsapp-button {
     display: inline-block;
-    background-color: #ffb6c1; /* Cor rosa do segundo botão */
+    background-color: #ffb6c1;
+    /* Cor rosa do segundo botão */
     color: white;
     font-weight: bold;
     padding: 10px 20px;
@@ -890,11 +868,12 @@ button {
     text-decoration: none;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s;
-  }
+}
 
-  .whatsapp-button:hover {
-    background-color: #f49cb3; /* Tom um pouco mais escuro ao passar o mouse */
-  }
+.whatsapp-button:hover {
+    background-color: #f49cb3;
+    /* Tom um pouco mais escuro ao passar o mouse */
+}
 
 /* services section end */
 
@@ -1273,4 +1252,137 @@ textarea#comment.update_mail::placeholder {
 
 .margin_top90 {
     margin-top: 90px;
+}
+
+/*Carlos*/
+/* Estiliza o contêiner do botão */
+.botão {
+    width: 150px;
+    /* Define a largura fixa */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Alinha o conteúdo ao centro */
+    padding-top: 10px;
+    /* Espaçamento superior */
+}
+
+/* Estiliza o botão dentro do contêiner */
+.botão button {
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    float: left;
+    /* Alinha à esquerda (pode ser desnecessário aqui) */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    border: 1px solid #fc95c4;
+    /* Borda rosa */
+    color: #fc95c4;
+    /* Cor do texto rosa */
+    padding: 8px 0px;
+    /* Espaçamento interno (vertical) */
+    border-radius: 40px;
+    /* Bordas arredondadas */
+    background-color: transparent;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botão button:hover {
+    background: linear-gradient(140deg, #fc95c4, #f9bfda, #fc95c4);
+    color: #ffffff;
+    /* Cor do texto muda para cinza escura */
+}
+
+
+/* Estilo do botão do carrinho */
+.carrinho-container {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: #fc95c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carrinho-container:hover {
+    background-color: #68aca8;
+}
+
+.carrinho-container img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo do painel de carrinho */
+.carrinho-panel {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(140deg, #faa6cc, #f8c5dd, #fc95c4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 101;
+}
+
+.carrinho-panel h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.carrinho-item button {
+    background-color: transparent;
+    color: #f9bfda;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.carrinho-item button:hover {
+    color: #eb4a90;
+}
+
+/* Container dos itens bo carrinho */
+.carrinho-itens-container {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 330px; /* Ajuste conforme sua preferência */
+    margin-bottom: 10px;
+}
+
+.total-compra {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.finalizarCompra {
+    background-color: #fc95c4;
+    padding: 3px 0px;
+    color: #ffffff;
+}
+
+.finalizarCompra:hover {
+    background-color: #fb75b4;
+    color: #ffffff;
 }

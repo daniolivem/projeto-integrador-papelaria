@@ -71,6 +71,7 @@
             </nav>
          </div>
       </div>
+
       <!-- header section end -->
       <!-- cream sectuion start -->
       <div class="cream_section layout_padding">
@@ -151,6 +152,41 @@
             </div>
             </div>
              <!-- vini: minha parte(fim)-->
+              
+            <div class="cream_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-1.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                        <div class="botão">
+                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-2.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                        <div class="botão">
+                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-1.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                        <div class="botão">
+                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div class="cream_section_2">
                <div class="row">
                   <div class="col-md-4">
@@ -158,7 +194,9 @@
                         <div class="cream_img"><img src="images/img-3.png"></div>
                         <div class="price_text">$10</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                        <div class="botão">
+                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                        </div>
                      </div>
                   </div>
                   <div class="col-md-4">
@@ -166,7 +204,9 @@
                         <div class="cream_img"><img src="images/img-4.png"></div>
                         <div class="price_text">$10</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                        <div class="botão">
+                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                        </div>
                      </div>
                   </div>
                   <div class="col-md-4">
@@ -174,7 +214,9 @@
                         <div class="cream_img"><img src="images/img-5.png"></div>
                         <div class="price_text">$10</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                        <div class="botão">
+                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -184,7 +226,7 @@
       </div>
       <!-- cream sectuion end -->
       <!-- copyright section start -->
-<div class="copyright_section margin_top90">
+      <div class="copyright_section margin_top90">
             <div class="container">
                <p class="copyright_text">
                   Desenvolvido com ❤️ pela Equipe 01<br>
@@ -204,5 +246,27 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <!-- javascript --> 
-   </body>
+      
+      <!--Carlos Aditando-->
+      <!-- Botão do carrinho flutuante -->
+   <div class="carrinho-container" onclick="toggleCarrinho()">
+      <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrinho">
+   </div>
+
+   <!-- Painel do carrinho -->
+   <div class="carrinho-panel" id="carrinhoPanel">
+      <h3>Carrinho</h3>
+
+      <div class="carrinho-itens-container">
+         <div id="itensCarrinho">
+            <!-- Itens serão inseridos aqui -->
+         </div>
+      </div>
+      
+      <div class="total-compra" id="totalCompra">Total: R$0,00</div>
+      <button onclick="finalizarCompra()" class="finalizarCompra">Finalizar Compra</button>
+   </div>
+
+   <script src="js/carrinho.js"></script>
+</body>
 </html>
