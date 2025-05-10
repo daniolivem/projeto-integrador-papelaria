@@ -263,7 +263,7 @@ button {
     padding: 10px 0px;
 }
 
-.login_bt {}
+
 
 .login_bt a {
     font-size: 16px;
@@ -394,6 +394,8 @@ button {
     border-radius: 4px;
 }
 
+
+
 .about_text {
     width: 100%;
     float: left;
@@ -401,6 +403,20 @@ button {
     color: #373736;
     margin-left: 0px;
 }
+
+#corpink{
+    color:#ec5f85;
+}
+
+.about_text2{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color:#ec5f85;
+    margin-left: 0px;
+    text-align: justify;
+}
+
 
 .about_img {
     width: 100%;
