@@ -590,16 +590,16 @@ button {
 
 /* vini: carrossel de itens da loja */
 
-.slider {
+#slider {
     margin: 0 auto;
     width: 80%;
     max-width: 100%;
     text-align: center;
     border: solid red;
-
+    
 }
 
-#slider input [type=radio] {
+#slider input[type= radio] {
     display: none;
 }
 
@@ -651,15 +651,17 @@ button {
     width: 600%; /* vini: lembrar-me de ajustar isso */
     line-height: 0;
     height: 10%;
-    border: solid black;
+    border: solid rgb(60, 255, 34);
 }
 
-#slides .slide {
+#slides .slide { /*esse trecho pode causar mudanças aparentes no conteudo do slides */
     width: 16.65%; /*vini: lembrar-me de ajustar */
     float: left;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    color: #fff;
+    color: #8800ff;
 }
 
 #slides .slide_1 {
@@ -697,6 +699,7 @@ button {
     height: 50px;
     z-index: 3;
     position: relative;
+    
 }
 
 #controls label {
@@ -705,6 +708,7 @@ button {
     width: 50px;
     height: 50px;
     opacity: .4;
+    
 }
 
 #controls label:hover {
@@ -717,9 +721,13 @@ button {
 #slide4:checked ~ #controls label:nth-child(5),
 #slide5:checked ~ #controls label:nth-child(6),
 #slide6:checked ~ #controls label:nth-child(1) {
-    background: url('../images/icons/caret-right.png') no-repeat;
+    background: url('../images/icons/caret-right.png') no-repeat center center;
     float: right;
+    margin: 0, -50px, 0, 0;
+    position: relative; /* ajustar posição dos botões muito que breve*/
+    bottom: 60% ;
     border: solid coral;
+    border-radius: 100%;
     display: block;
 }
 
@@ -729,13 +737,57 @@ button {
 #slide4:checked ~ #controls label:nth-last-child(4),
 #slide5:checked ~ #controls label:nth-last-child(3),
 #slide6:checked ~ #controls label:nth-last-child(2) {
-    background: url('../images/icons/caret-left.png') no-repeat;
+    background: url('../images/icons/caret-left.png') no-repeat center center;
     float: left;
     margin: 0 0 0 -50px; /* vini: ajustar como os demais */
     border: solid coral;
+    border-radius: 100%;
     display: block;
 }
 
+#bullets {
+    margin: 100px 0 0;
+    text-align: center;
+
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #fc95c4;
+    margin: 0 10px;
+    
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4),
+#slide5:checked ~ #bullets label:nth-child(5),
+#slide6:checked ~ #bullets label:nth-child(6) {
+    background: #b2376f;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2), 
+    #slide2:checked ~ #controls label:nth-child(3), 
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(1) {
+    margin: 0;
+}
+    #slide1:checked ~ #controls label:nth-last-child(1), 
+    #slide2:checked ~ #controls label:nth-last-child(6), 
+    #slide3:checked ~ #controls label:nth-last-child(5),
+    #slide4:checked ~ #controls label:nth-last-child(4),
+    #slide5:checked ~ #controls label:nth-last-child(3),
+    #slide6:checked ~ #controls label:nth-last-child(2) {
+    margin: 0;
+}
+}
 
 /* cream section end */ 
 
