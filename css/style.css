@@ -263,11 +263,23 @@ button {
     padding: 10px 0px;
 }
 
-/* .promocao {
+#promocao {
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 350px;
+    margin-top: -380px;
+    background-color: aquamarine;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: left;
-} */
+    align-items: flex-start;
+}
+
+#promocao .h6 {
+    display: block;
+    margin-left: 50px;
+    justify-content: center;
+}
 
 .login_bt a {
     font-size: 16px;
