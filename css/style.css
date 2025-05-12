@@ -614,7 +614,7 @@ button {
 }
 
 #slider input[type= radio] {
-    
+    display: none;
 }
 
 #slider label {
@@ -647,18 +647,6 @@ faz parte do slide se mover todo ou parte dele(inicio)*/
 
 #slide3:checked ~ #slides .inner {
     margin-left: -200%;
-}
-
-#slide4:checked ~ #slides .inner {
-    margin-left: -300%;
-}
-
-#slide5:checked ~ #slides .inner {
-    margin-left: -400%;
-}
-
-#slide6:checked ~ #slides .inner {
-    margin-left: -500%;
 }/*vini: daqui para cima, 
 faz parte do slide se mover todo ou parte dele(fim)*/
 
@@ -789,28 +777,19 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 
 #slide1:checked ~ #bullets label:nth-child(1),
 #slide2:checked ~ #bullets label:nth-child(2),
-#slide3:checked ~ #bullets label:nth-child(3),
-#slide4:checked ~ #bullets label:nth-child(4),
-#slide5:checked ~ #bullets label:nth-child(5),
-#slide6:checked ~ #bullets label:nth-child(6) {
+#slide3:checked ~ #bullets label:nth-child(3){
     background: #b2376f;
 }
 
 @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2), 
     #slide2:checked ~ #controls label:nth-child(3), 
-    #slide3:checked ~ #controls label:nth-child(4),
-    #slide4:checked ~ #controls label:nth-child(5),
-    #slide5:checked ~ #controls label:nth-child(6),
-    #slide6:checked ~ #controls label:nth-child(1) {
+    #slide3:checked ~ #controls label:nth-child(1){
     margin: 0;
 }
     #slide1:checked ~ #controls label:nth-last-child(1), 
-    #slide2:checked ~ #controls label:nth-last-child(6), 
-    #slide3:checked ~ #controls label:nth-last-child(5),
-    #slide4:checked ~ #controls label:nth-last-child(4),
-    #slide5:checked ~ #controls label:nth-last-child(3),
-    #slide6:checked ~ #controls label:nth-last-child(2) {
+    #slide2:checked ~ #controls label:nth-last-child(3), 
+    #slide3:checked ~ #controls label:nth-last-child(2) {
     margin: 0;
 }
 }
