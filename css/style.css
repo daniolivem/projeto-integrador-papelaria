@@ -263,7 +263,11 @@ button {
     padding: 10px 0px;
 }
 
-
+/* .promocao {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+} */
 
 .login_bt a {
     font-size: 16px;
