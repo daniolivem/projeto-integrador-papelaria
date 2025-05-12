@@ -614,7 +614,7 @@ button {
 }
 
 #slider input[type= radio] {
-    display: none;
+    
 }
 
 #slider label {
@@ -742,10 +742,7 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 
 #slide1:checked ~ #controls label:nth-child(2), 
 #slide2:checked ~ #controls label:nth-child(3), 
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(5),
-#slide5:checked ~ #controls label:nth-child(6),
-#slide6:checked ~ #controls label:nth-child(1) {
+#slide3:checked ~ #controls label:nth-child(1) {
     background: #fc9cc8 url('../images/icons/caret-right.png') no-repeat center center;
     float: right;
     margin: 0, -50px, 0, 0;
@@ -759,11 +756,8 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 }
 
 #slide1:checked ~ #controls label:nth-last-child(1), 
-#slide2:checked ~ #controls label:nth-last-child(6), 
-#slide3:checked ~ #controls label:nth-last-child(5),
-#slide4:checked ~ #controls label:nth-last-child(4),
-#slide5:checked ~ #controls label:nth-last-child(3),
-#slide6:checked ~ #controls label:nth-last-child(2) {
+#slide2:checked ~ #controls label:nth-last-child(3), 
+#slide3:checked ~ #controls label:nth-last-child(2) {
     background: #fc9cc8 url('../images/icons/caret-left.png') no-repeat center center;
     float: left;
     margin: 0 0 0 -50px; /* vini: ajustar como os demais */
