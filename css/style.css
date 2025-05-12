@@ -602,14 +602,14 @@ button {
 
 #slider {
     margin-right: 25px;
-    width: 50%;
+    width: 60%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
-    text-align: center;
     border: solid red;
     display: grid;
-    place-items: center;
+    /*place-items: center;*/ /*vini: deixei comentado, pois o slider fica minusculo
+    e vai impurrar alguns elementos de forma indesejável. */
     background-color: #ffffff;
 }
 
@@ -623,7 +623,7 @@ button {
 }
 
 #slides {
-    padding: 3%;
+    padding: 1%;
     position: relative;
     z-index: 1;
 }
@@ -631,7 +631,7 @@ button {
 #overflow {
     width: 100%;
     position: relative;
-    bottom: 0.8rem;
+    bottom: 0%;
     overflow: hidden; /*vini: evita que o conteudo vaze para fora da tela */
 
 }
@@ -652,18 +652,17 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 
 #slides .inner {
     transition: margin-left 800ms cubic-bezier ease;
-    width: 601%; /* vini: lembrar-me de ajustar isso */
+    width: 301%; /* vini: lembrar-me de ajustar isso */
     line-height: 0;
     height: 10%;
     border: solid rgb(60, 255, 34);
 }
 
 #slides .slide { /*esse trecho pode causar mudanças aparentes no conteudo do slides */
-    width: 16.65%; /*vini: lembrar-me de ajustar *//*16.65*/
+    width: 33.2%; /*vini: lembrar-me de ajustar *//*16.65*/
     float: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*vini: alterar 666 muda o posicionameno da div do content*/
     height: 100%;
     color: #8800ff;
     border: solid #442d00;
@@ -671,28 +670,18 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 
 #slides .slide_1 {
     display: flex;
-    background: url('../images/produtos/cadernos-mochilas/Captura\ de\ tela\ 2025-05-07\ 105518.png');
-    background-size: contain;
-}
+    background: url('../images/produtos/cadernos-mochilas/Captura\ de\ tela\ 2025-05-07\ 105518.png') no-repeat;
+    background-size: contain; 
+    }
 
 #slides .slide_2 {
+    display: flex;
     background: #4eb3d4;
 }
 
 #slides .slide_3 {
+    display: flex;
     background: #294f5c;
-}
-
-#slides .slide_4 {
-    background: #89cee4;
-}
-
-#slides .slide_5 {
-    background: #083240;
-}
-
-#slides .slide_6 {
-    background: #12aee2;
 }
 
 .slide-content {
@@ -710,7 +699,7 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     max-width: 100%; 
     z-index: 3;
     position: relative;
-    bottom: 15rem; /*vini: vai subir os controles 'bottom: 73%' */
+    bottom: 12rem; /*vini: vai subir os controles 'bottom: 73%' */
     border: solid mediumslateblue;
     
 }
@@ -758,7 +747,7 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 }
 
 #bullets {
-    margin: -90px 0 0 1%; /* pontinhos abaixo do slide*/
+    margin: -1% 0 0 -20%; /* pontinhos abaixo do slide*/
     text-align: center;
     border: solid #12aee2;
 }
