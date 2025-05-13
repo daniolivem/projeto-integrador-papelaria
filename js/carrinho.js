@@ -1,55 +1,82 @@
-// Exibe ou esconde o painel do carrinho
-function toggleCarrinho() {
-    const panel = document.getElementById("carrinhoPanel");
-    panel.style.display = panel.style.display === "flex" ? "none" : "flex";
-}
+document.addEventListener("DOMContentLoaded", function () {
+   let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-// Adiciona um item ao carrinho (agora com o nome correto)
-function adicionarAoCarrinho(nome, preco) {
-    const item = { nome, preco };
-    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-    carrinho.push(item);
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-    renderizarCarrinho();
-}
+   function salvarCarrinho() {
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+   }
 
-// Renderiza os itens no carrinho
-function renderizarCarrinho() {
-    const itensCarrinho = document.getElementById("itensCarrinho");
-    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-    itensCarrinho.innerHTML = "";  // Limpa a lista antes de adicionar
+   function renderizarCarrinho() {
+      const container = document.getElementById("itensCarrinho");
+      const totalCompra = document.getElementById("totalCompra");
 
-    let total = 0;  // Inicializa o total da compra
+      container.innerHTML = "";
+      let total = 0;
 
-    carrinho.forEach((item, index) => {
-    const divItem = document.createElement("div");
-    divItem.classList.add("carrinho-item");
-    divItem.innerHTML = `
-        <span>${item.nome} - R$${item.preco}</span>
-        <button onclick="removerItem(${index})">X</button>
-    `;
-    itensCarrinho.appendChild(divItem);
-    total += item.preco;
+      carrinho.forEach((item, index) => {
+         total += item.preco;
+
+         const itemDiv = document.createElement("div");
+         itemDiv.classList.add("item-carrinho");
+         itemDiv.innerHTML = `
+            <p>${item.nome} - R$${item.preco.toFixed(2)}</p>
+            <button onclick="removerItem(${index})">Remover</button>
+         `;
+         container.appendChild(itemDiv);
+      });
+
+      totalCompra.textContent = `Total: R$${total.toFixed(2)}`;
+   }
+
+   window.adicionarAoCarrinho = function (nome, preco) {
+      carrinho.push({ nome, preco });
+      salvarCarrinho();
+      renderizarCarrinho();
+   };
+
+   window.removerItem = function (index) {
+      carrinho.splice(index, 1);
+      salvarCarrinho();
+      renderizarCarrinho();
+   };
+
+   window.toggleCarrinho = function () {
+      const panel = document.getElementById("carrinhoPanel");
+      panel.style.display = panel.style.display === "block" ? "none" : "block";
+   };
+
+   window.finalizarCompra = function () {
+      const resumo = document.getElementById("resumo-pedido");
+      const totalPedido = document.getElementById("total-pedido");
+      let total = 0;
+
+      resumo.innerHTML = "";
+      carrinho.forEach((item) => {
+         total += item.preco;
+         const li = document.createElement("li");
+         li.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
+         resumo.appendChild(li);
+      });
+
+      totalPedido.textContent = `Total: R$${total.toFixed(2)}`;
+
+      mostrarMensagemSucesso(); // ✅ Chamando a função com temporizador
+      document.getElementById("carrinhoPanel").style.display = "none";
+
+      carrinho = [];
+      salvarCarrinho();
+      renderizarCarrinho();
+   };
+
+   renderizarCarrinho(); // Exibe o carrinho ao carregar a página
 });
 
-    // Exibe o total da compra
-    document.getElementById("totalCompra").innerText = `Valor Total: R$${total.toFixed(2)}`;
-}
+// ✅ Função para mostrar e esconder mensagem de sucesso automaticamente
+function mostrarMensagemSucesso() {
+   const sucesso = document.getElementById("compra-sucesso");
+   sucesso.style.display = "block";
 
-// Remove um item do carrinho
-function removerItem(index) {
-    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-    carrinho.splice(index, 1); // Remove o item apenas da posição indicada
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-    renderizarCarrinho();
+   // Esconde após 5 segundos (5000 milissegundos)
+   setTimeout(() => {
+      sucesso.style.display = "none";
+   }, 5000);
 }
-
-// Finaliza a compra (simulação)
-function finalizarCompra() {
-    alert("Compra finalizada!");
-    localStorage.removeItem("carrinho");  // Limpa o carrinho após a compra
-    renderizarCarrinho();
-}
-
-// Inicializa o carrinho ao carregar a página
-window.onload = renderizarCarrinho;

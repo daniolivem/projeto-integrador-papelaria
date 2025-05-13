@@ -1254,7 +1254,7 @@ textarea#comment.update_mail::placeholder {
     margin-top: 90px;
 }
 
-/*Carlos*/
+       /*Carlos*/
 /* Estiliza o contêiner do botão */
 .botão {
     width: 150px;
@@ -1362,7 +1362,7 @@ textarea#comment.update_mail::placeholder {
     color: #eb4a90;
 }
 
-/* Container dos itens bo carrinho */
+/* Container dos itens no carrinho */
 .carrinho-itens-container {
     flex: 1;
     overflow-y: auto;
@@ -1385,4 +1385,65 @@ textarea#comment.update_mail::placeholder {
 .finalizarCompra:hover {
     background-color: #fb75b4;
     color: #ffffff;
+}
+
+
+
+      /*CheckMark*/
+/*Confirmação de Compra*/
+.checkmark {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid #4caf50;
+  margin: 0 auto 1rem;
+  position: relative;
+  animation: pop 0.5s ease-out forwards;
+}
+
+/* O "check" que aparece dentro do círculo */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 13px;
+  border-left: 6px solid #4caf50;
+  border-bottom: 6px solid #4caf50;
+  transform: rotate(-45deg);
+  top: 17px;
+  left: 16px;
+  opacity: 0;
+  animation: check 0.4s ease-out 0.3s forwards;
+}
+
+/* Animação do pop do círculo */
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animação de aparecer o check dentro do círculo */
+@keyframes check {
+  to {
+    opacity: 1;
+  }
+}
+
+
+#compra-sucesso {
+   position: fixed;
+   top: 110px;
+   right: 20px;
+   background: #f0fff0;
+   padding: 20px;
+   border: 2px solid #28a745;
+   z-index: 100;
+   display: none;
 }
