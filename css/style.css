@@ -281,6 +281,22 @@ button {
     justify-content: center;
 }
 
+@media (max-width: 800px){
+    #promocao {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        left: 0%;
+        width: 100%;
+    }
+
+    #promocao .h6 {
+        display: inline-block;
+        margin-left: 5px;
+
+    }
+}
+
 .login_bt a {
     font-size: 16px;
     color: #222222;
@@ -613,6 +629,18 @@ button {
     background-color: #ffffff;
 }
 
+@media (max-width: 800px){
+    #slider {
+        margin-right: 25px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        display: grid;
+        background-color: #ffffff;    
+    }
+}
+
 #slider input[type= radio] {
     display: none;
 }
@@ -623,9 +651,11 @@ button {
 }
 
 #slides {
+
     padding: 1%;
     position: relative;
     z-index: 1;
+    
 }
 
 #overflow {
@@ -688,6 +718,7 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     padding: 35%; /*vini: por algum motivo aumenta o tamanho em altura*/
     height: 80%;
     width: 60%;
+    display: grid;
     border: solid blue;
 
 }
@@ -704,6 +735,17 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     
 }
 
+@media (max-width: 800px){
+    #controls {
+        /*display: flex;*/
+        position: relative;
+        left: 0%;
+        right: 0%;
+        bottom: 8rem;
+        width: 22rem;
+    }
+}
+
 #controls label {
     transition: opacity 0.2s ease-out;
     display: none;
@@ -713,8 +755,24 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     
 }
 
+/*@media (max-width: 800px){
+    #controls label {
+        transition: opacity 0.2s ease-out;
+        display: none;
+        width: 50px; 
+        height: 50px;
+        opacity: .4;
+    }
+}*/
+
 #controls label:hover {
     opacity: 1;
+}
+
+@media (max-width:800px){
+    #controls label:active {
+    opacity: 1;
+}
 }
 
 #slide1:checked ~ #controls label:nth-child(2), 
@@ -761,7 +819,22 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     background: #fc95c4;
     margin: 0 10px;
     z-index: 10;
+    left: 2%;
     
+}
+
+@media (max-width: 800px){
+    #bullets label {
+        position: relative;
+        left: 7%;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #fc95c4;
+        margin: 0 10px;
+        z-index: 10;
+    }
 }
 
 #slide1:checked ~ #bullets label:nth-child(1),
@@ -770,16 +843,19 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     background: #b2376f;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     #slide1:checked ~ #controls label:nth-child(2), 
     #slide2:checked ~ #controls label:nth-child(3), 
     #slide3:checked ~ #controls label:nth-child(1){
     margin: 0;
+    right: 6%;
+    
 }
     #slide1:checked ~ #controls label:nth-last-child(1), 
     #slide2:checked ~ #controls label:nth-last-child(3), 
     #slide3:checked ~ #controls label:nth-last-child(2) {
     margin: 0;
+    left: -3%;
 }
 }
 
@@ -1317,6 +1393,7 @@ textarea#comment.update_mail::placeholder {
         height: 50px;
         bottom: 15px;
         right: 15px;
+        top: 110px;
     }
 
     .carrinho-container img {
