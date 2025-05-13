@@ -1393,6 +1393,7 @@ textarea#comment.update_mail::placeholder {
         height: 50px;
         bottom: 15px;
         right: 15px;
+        top: 100px;
     }
 
     .carrinho-container img {
