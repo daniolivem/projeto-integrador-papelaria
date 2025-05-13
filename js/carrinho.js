@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       totalPedido.textContent = `Total: R$${total.toFixed(2)}`;
 
-      mostrarMensagemSucesso(); // ✅ Chamando a função com temporizador
+      mostrarMensagemSucesso(); // Chamando a função com temporizador
       document.getElementById("carrinhoPanel").style.display = "none";
 
       carrinho = [];
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
    renderizarCarrinho(); // Exibe o carrinho ao carregar a página
 });
 
-// ✅ Função para mostrar e esconder mensagem de sucesso automaticamente
+// Função para mostrar e esconder mensagem de sucesso automaticamente
 function mostrarMensagemSucesso() {
    const sucesso = document.getElementById("compra-sucesso");
    sucesso.style.display = "block";
