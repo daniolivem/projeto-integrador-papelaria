@@ -1297,14 +1297,10 @@ textarea#comment.update_mail::placeholder {
        /*Carlos*/
 /* Estiliza o contêiner do botão */
 .botão {
-    width: 150px;
-    /* Define a largura fixa */
-    margin: 0 auto;
-    /* Centraliza horizontalmente */
-    text-align: center;
-    /* Alinha o conteúdo ao centro */
-    padding-top: 10px;
-    /* Espaçamento superior */
+    width: 150px;  /* Define a largura fixa */
+    margin: 0 auto;  /* Centraliza horizontalmente */
+    text-align: center;  /* Alinha o conteúdo ao centro */
+    padding-top: 10px;  /* Espaçamento superior */
 }
 
 /* Estiliza o botão dentro do contêiner */
@@ -1336,13 +1332,13 @@ textarea#comment.update_mail::placeholder {
 }
 
 
-/* Estilo do botão do carrinho */
+/* Estilo do Ícone do carrinho */
 .carrinho-container {
     position: fixed;
     top: 30px;
     right: 20px;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     background-color: #fc95c4;
     border-radius: 50%;
     display: flex;
@@ -1350,7 +1346,21 @@ textarea#comment.update_mail::placeholder {
     justify-content: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    z-index: 100;
+    z-index: 1000;
+}
+/*modularização de telas*/
+@media (max-width: 600px) {
+    .carrinho-container {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .carrinho-container img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .carrinho-container:hover {
@@ -1358,8 +1368,8 @@ textarea#comment.update_mail::placeholder {
 }
 
 .carrinho-container img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 /* Estilo do painel de carrinho */
@@ -1378,28 +1388,29 @@ textarea#comment.update_mail::placeholder {
     z-index: 101;
 }
 
-.carrinho-panel h3 {
-    margin-top: 0;
+ h3 {
     font-size: 25px;
 }
 
-.carrinho-item {
+.item-carrinho {
     display: flex;
     justify-content: space-between;
-    padding: 5px 0;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 8px; /* 🔽 padding reduzido */
 }
 
-.carrinho-item button {
+.item-carrinho button {
     background-color: transparent;
-    color: #f9bfda;
     border: none;
-    font-size: 16px;
+    color: #ff0000;
+    padding: 4px 8px;
+    font-size: 17px;
     cursor: pointer;
-    padding: 0 5px;
 }
 
-.carrinho-item button:hover {
-    color: #eb4a90;
+.item-carrinho button:hover {
+    color: #800101;
 }
 
 /* Container dos itens no carrinho */
@@ -1411,15 +1422,17 @@ textarea#comment.update_mail::placeholder {
 }
 
 .total-compra {
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .finalizarCompra {
     background-color: #fc95c4;
-    padding: 3px 0px;
     color: #ffffff;
+    padding: 5px 80px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .finalizarCompra:hover {

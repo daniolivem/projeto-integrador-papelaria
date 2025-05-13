@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
          const itemDiv = document.createElement("div");
          itemDiv.classList.add("item-carrinho");
          itemDiv.innerHTML = `
-            <p>${item.nome} - R$${item.preco.toFixed(2)}</p>
-            <button onclick="removerItem(${index})">Remover</button>
+            <span>${item.nome} - R$${item.preco.toFixed(2)}</span>
+            <button onclick="removerItem(${index})">X</button>
          `;
          container.appendChild(itemDiv);
       });
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
          resumo.appendChild(li);
       });
 
-      totalPedido.textContent = `Total: R$${total.toFixed(2)}`;
+      totalPedido.textContent = `Valor Total: R$${total.toFixed(2)}`;
 
       mostrarMensagemSucesso(); // Chamando a função com temporizador
       document.getElementById("carrinhoPanel").style.display = "none";
