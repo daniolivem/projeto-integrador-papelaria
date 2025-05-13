@@ -572,7 +572,7 @@ button {
     width: 80px;
     margin: 0 auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #373736;
     font-weight: bold;
     background: #fff;
@@ -1406,6 +1406,7 @@ textarea#comment.update_mail::placeholder {
         height: 50px;
         bottom: 15px;
         right: 15px;
+        top: 110px;
     }
 
     .carrinho-container img {
