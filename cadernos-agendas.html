@@ -144,30 +144,30 @@
                   <div class="col-md-4">
                      <div class="cream_box">
                         <div class="cream_img"><img src="images/img-1.png"></div>
-                        <div class="price_text">$10</div>
+                        <div class="price_text">$50</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
                         <div class="botão">
-                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                           <button onclick="adicionarAoCarrinho('Produto10', 50)">Comprar</button>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div class="cream_box">
                         <div class="cream_img"><img src="images/img-2.png"></div>
-                        <div class="price_text">$10</div>
+                        <div class="price_text">$40</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
                         <div class="botão">
-                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                           <button onclick="adicionarAoCarrinho('Produto10', 40)">Comprar</button>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div class="cream_box">
                         <div class="cream_img"><img src="images/img-1.png"></div>
-                        <div class="price_text">$10</div>
+                        <div class="price_text">$70</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
                         <div class="botão">
-                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                           <button onclick="adicionarAoCarrinho('Produto10', 70)">Comprar</button>
                         </div>
                      </div>
                   </div>
@@ -188,20 +188,20 @@
                   <div class="col-md-4">
                      <div class="cream_box">
                         <div class="cream_img"><img src="images/img-4.png"></div>
-                        <div class="price_text">$10</div>
+                        <div class="price_text">$20</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
                         <div class="botão">
-                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                           <button onclick="adicionarAoCarrinho('Produto10', 20)">Comprar</button>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div class="cream_box">
                         <div class="cream_img"><img src="images/img-5.png"></div>
-                        <div class="price_text">$10</div>
+                        <div class="price_text">$30</div>
                         <h6 class="strawberry_text">Strawberry Ice Cream</h6>
                         <div class="botão">
-                           <button onclick="adicionarAoCarrinho('Produto10', 10)">Comprar</button>
+                           <button onclick="adicionarAoCarrinho('Produto10', 30)">Comprar</button>
                         </div>
                      </div>
                   </div>
@@ -222,20 +222,15 @@
          </div>
       </div>
       <!-- copyright section end -->
-      <!-- Javascript files -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+
+      
+      <!--Carlos Aditando-->
       <!-- Botão do carrinho flutuante -->
       <div class="carrinho-container" onclick="toggleCarrinho()">
          <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrinho">
       </div>
-      <!-- Painel do carrinho -->
+
+   <!-- Painel do carrinho -->
       <div class="carrinho-panel" id="carrinhoPanel">
          <h3>Carrinho</h3>
          <div class="carrinho-itens-container">
@@ -243,9 +238,34 @@
                <!-- Itens serão inseridos aqui -->
             </div>
          </div>
-         <div class="total-compra" id="totalCompra">Total: R$0,00</div>
+      <div class="total-compra" id="totalCompra">Total: R$0,00</div>
          <button onclick="finalizarCompra()" class="finalizarCompra">Finalizar Compra</button>
       </div>
-      <script src="js/carrinho.js"></script>
-   </body>
+
+   <!-- Tela de sucesso de compra -->
+   <section id="compra-sucesso" class="mensagem-sucesso">
+   <div class="checkmark"></div>
+      <div class="message">Compra realizada com sucesso! 🎉 </div>
+      <div class="order-summary">
+         <h3>Resumo do Pedido:</h3>
+         <ul id="resumo-pedido"></ul>
+         <p id="total-pedido"></p>
+      </div>
+   </section>
+
+   <!-- Scripts no final do body -->
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/plugin.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<!--carrinho-->
+<script src="js/carrinho.js"></script>
+<!-- javascript -->
+
+</body>
 </html>
