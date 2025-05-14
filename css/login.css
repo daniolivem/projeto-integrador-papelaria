@@ -110,6 +110,9 @@ body{
 .areageral .login-img{
     width: 50%;
 }
+.login_bt a {
+    color: var(--default-color)
+}
 @media (max-width:800px) {
     .login-img{
         display: none;
