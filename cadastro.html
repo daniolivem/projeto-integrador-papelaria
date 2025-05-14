@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
    <head>
-      <!-- basic  -->
+      <!-- basic l  -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +17,8 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!--login css-->
+      <link rel="stylesheet" type="text/css" href="css/login.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -28,7 +30,6 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
    </head>
    <body>
       <div class="header_section header_bg">
@@ -38,8 +39,8 @@
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ml-auto">
                      <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
@@ -53,7 +54,7 @@
                         <a class="nav-link" href="Escrita e Decoração.html">Escrita</a>
                      </li>
                      
-                     <li class="nav-item active">
+                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Serviços</a>
                      </li>
                      <li class="nav-item">
@@ -64,7 +65,7 @@
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
-                     <div class="login_bt"><a href="login.html">Login <span style="color: #222222;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                     <div class="login_bt "><a href="login.html">Login <span style="color: #222222;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
                      <div class="fa fa-search form-control-feedback"></div>
                   </form>
                </div>
@@ -72,74 +73,102 @@
          </div>
       </div>
       <!-- header section end -->
-       <!-- iniciei aqui (dani) -->
-      <!-- services section start -->
-      <div class="services_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="services_taital">Nossos Serviços</h1>
-                  <p class="services_text">Criatividade e Organização ao Alcance de um Clique</p>
-               </div>
-            </div>
-            <div class="services_section_2">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="services_box">
-                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icons/printer.png"></span>Impressão sob demanda</h5>
-                        <p class="lorem_text">Envie seus arquivos digitalmente, escolha entre diversas opções de papel e acabamento, e receba tudo no conforto de sua casa.</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="services_box">
-                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icons/gode.png"></span>Personalização digital</h5>
-                        <p class="lorem_text">Desenvolva designs únicos e criativos que refletem sua marca ou estilo pessoal, cuidadosamente ajustado para atender às suas necessidades.</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="services_box">
-                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icons/truck.png"></span>Entrega expressa</h5>
-                        <p class="lorem_text">Pedidos confirmados até as 13h serão enviados no mesmo dia, garantindo que seus materiais essenciais sempre estejam à mão.</p>
-                     </div>
-                  </div>
-               </div>
+
+      <!--tela de login inicio-->
+
+      <div class="mozart">
+         <div class="areageral">
+            <div class="loginform">
+               <div class="titulo">Login</div>
+               <form action="#">
+
+            <div class="input-box">
+                  <i class="fa fa-envelope"></i>
+                  <input type="text" placeholder="Digite seu e-mail">
             </div>
 
-          <div class="services_section_2">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="services_box">
-                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icons/caixa.png"></span>Assinaturas de materiais</h5>
-                        <p class="lorem_text">Receba mensalmente kits exclusivos de papelaria, incluindo itens como canetas, adesivos e cadernos personalizados, com praticidade e estilo.</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="services_box">
-                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icons/video-aula.png"></span>Tutoriais e cursos</h5>
-                        <p class="lorem_text">Aprenda a criar designs únicos e criativos que refletem sua marca ou estilo pessoal, com cursos e tutoriais práticos.</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="services_box">
-                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icons/consultor.png"></span>Consultoria de Design</h5>
-                        <p class="lorem_text">Receba orientações especializadas para transformar suas ideias em projetos visuais impactantes, com suporte dedicado e personalizado.</p>
-                     </div>
-                  </div>
-               </div>
-               
+            <div class="input-box">
+                  <i class="fa fa-lock"></i>
+                  <input type="password" placeholder="Digite sua senha">
             </div>
-            <div class="seemore_bt"><a href="https://wa.me/5585991707925" target="_blank" class="whatsapp-button">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" height="20" style="margin-right: 5px;"> 
-  Fale Conosco
-</a></div>
+
+            <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+
+            <div class="input-box">
+                  <input type="submit" value="Entrar">
+            </div>
+
+            <div class="divider"> ou </div>
+
+            <div class="midias-sociais">
+                  <a href="https://www.google.com" target="_blank"><i class="fa fa-google"></i></a>
+                  <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="signup-text">
+                  Não tem uma conta? <a href="#">Crie uma agora</a>
+            </div>
+            </form>
+         </div>
+         <div class="login-img">
+                     <img src="./images/fundologin.png" alt="">
+            </div>
+       <!--tela de login fim-->
          </div>
       </div>
-   </div>
-      <!-- terminei a services aqui (dani) -->
-      <!-- services section end -->
+
+
+     
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="contact_main">
+                     <h1 class="contact_taital">Fale Conosco</h1>
+                     <form action="/action_page.php">
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Nome" name="Name">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="E-mail" name="Name">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Telefone" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <textarea class="massage-bt" placeholder="Mensagem" rows="5" id="comment" name="Massage"></textarea>
+                        </div>
+                     </form>
+                     <div class="main_bt"><a href="#">Enviar</a></div>
+                  </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="mail_main">
+                     <h3 class="newsletter_text">Fique por dentro do Planeta Papel</h3>
+                     <div class="form-group">
+                        <textarea class="update_mail" placeholder="Coloque seu E-mail" rows="5" id="comment" name="Enter Your Email"></textarea>
+                        <div class="subscribe_bt"><a href="#">Inscreva-se</a></div>
+                     </div>
+                  </div>
+                  <div class="footer_social_icon">
+                     <h3 class="newsletter_text">Contatos</h3>
+                     <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=5585991707925"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:planetapapelpapelariars@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/daniolivem/projeto-integrador-papelaria"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
       <!-- copyright section start -->
-      <!-- feito pelo Caco -->
-      <div class="copyright_section margin_top90">
+      <div class="copyright_section">
+<div class="copyright_section margin_top90">
             <div class="container">
                <p class="copyright_text">
                   Desenvolvido com ❤️ pela Equipe 01<br>
