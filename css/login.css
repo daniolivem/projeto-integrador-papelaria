@@ -15,6 +15,13 @@ body{
     background-color: var(--default-color);
  
 }
+.login_bt a {
+  color: #fc95c4;
+}
+.login_bt a i{
+    padding: 5px;
+}
+
 .mozart{
       min-width: 100vh;
     display: flex;
@@ -109,9 +116,6 @@ body{
 }
 .areageral .login-img{
     width: 50%;
-}
-.login_bt a {
-    color: var(--default-color)
 }
 @media (max-width:800px) {
     .login-img{
