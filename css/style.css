@@ -288,6 +288,7 @@ button {
         position: relative;
         left: 0%;
         width: 100%;
+        margin-bottom: 15px;
     }
 
     #promocao .h6 {
@@ -623,8 +624,9 @@ button {
     max-width: 100%;
     max-height: 100%;
     display: grid;
-    /*place-items: center;*/ /*vini: deixei comentado, pois o slider fica minusculo
-    e vai impurrar alguns elementos de forma indesejável. */
+    /*place-items: center;*/
+    /*vini: deixei comentado, pois o slider fica minusculo
+    e vai impurrar alguns elementos de forma indesejável.*/
     background-color: #ffffff;
 }
 
@@ -667,12 +669,14 @@ button {
 
 #slide1:checked ~ #slides .inner { /*vini: daqui para baixo,
 faz parte do slide se mover todo ou parte dele(inicio)*/
-    margin-left: -0.2%;
+    margin-left: 2.2%;
 }
 
 @media (max-width:800px){
     #slide1:checked ~ #slides .inner {
-    margin-left: 3.2%;
+    margin-left: 2.2%;
+    position: relative;
+    left: 4%
 }
 }
 
@@ -682,7 +686,7 @@ faz parte do slide se mover todo ou parte dele(inicio)*/
 
 @media (max-width:800px){
     #slide1:checked ~ #slides .inner {
-    margin-left: 3.2%;
+    margin-left: 10.2%;
 }
 }
 
@@ -716,13 +720,13 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 
 #slides .slide_1 {
     display: flex;
-    background: url('../images/produtos/cadernos-mochilas/Captura\ de\ tela\ 2025-05-07\ 105518.png') no-repeat;
+    background: url('../images/produtos/cadernos-mochilas/cadpromo.png') no-repeat;
     background-size: contain; 
     }
 
 #slides .slide_2 {
     display: flex;
-     background: #4eb3d4;
+    background: #4eb3d4;
 }
 
 #slides .slide_3 {
@@ -861,7 +865,7 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     #slide2:checked ~ #controls label:nth-child(3), 
     #slide3:checked ~ #controls label:nth-child(1){
     margin: 0;
-    right: 6%;
+    right: 2%;
     
 }
     #slide1:checked ~ #controls label:nth-last-child(1), 
