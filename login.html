@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
    <head>
-      <!-- basic -->
+      <!-- basic l  -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +17,8 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!--login css-->
+      <link rel="stylesheet" href="css/login.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -28,7 +30,6 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
    </head>
    <body>
       <div class="header_section header_bg">
@@ -38,7 +39,7 @@
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                      <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home</a>
@@ -58,7 +59,7 @@
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="about.html">Sobre</a>
-                     </li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contato</a>
                      </li>
@@ -71,27 +72,102 @@
             </nav>
          </div>
       </div>
-      <!-- header  section end -->
-      <!-- about sectuion start -->
-      <div class="about_section layout_padding">
+      <!-- header section end -->
+
+      <!--tela de login inicio-->
+
+      <div class="mozart">
+         <div class="areageral">
+            <div class="loginform">
+               <div class="titulo">Login</div>
+               <form action="#">
+
+            <div class="input-box">
+                  <i class="fa fa-envelope"></i>
+                  <input type="text" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="input-box">
+                  <i class="fa fa-lock"></i>
+                  <input type="password" placeholder="Digite sua senha">
+            </div>
+
+            <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+
+            <div class="input-box">
+                  <input type="submit" value="Entrar">
+            </div>
+
+            <div class="divider"> ou </div>
+
+            <div class="midias-sociais">
+                  <i class="fa fa-google"></i>
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-github"></i>
+            </div>
+
+            <div class="signup-text">
+                  Não tem uma conta? <a href="#">Crie uma agora</a>
+            </div>
+            </form>
+         </div>
+         <div class="login-img">
+                     <img src="/images/fundologin.png" alt="">
+            </div>
+       <!--tela de login fim-->
+         </div>
+      </div>
+
+
+     
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
          <div class="container">
             <div class="row">
-               <div class="col-md-6">
-                  <div class="about_img"><img src="images/Logo-grande.png"></div>
+               <div class="col-md-4">
+                  <div class="contact_main">
+                     <h1 class="contact_taital">Fale Conosco</h1>
+                     <form action="/action_page.php">
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Nome" name="Name">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="E-mail" name="Name">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Telefone" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <textarea class="massage-bt" placeholder="Mensagem" rows="5" id="comment" name="Massage"></textarea>
+                        </div>
+                     </form>
+                     <div class="main_bt"><a href="#">Enviar</a></div>
+                  </div>
                </div>
-               <div class="col-md-6">
-                  <h1 class="about_taital" >Planeta Papel</h1>
-                  <p class="about_text2">A nossa papelaria online é mais do que apenas uma loja virtual;
-                      é um espaço digital dedicado a quem valoriza a qualidade e a criatividade na escolha de materiais de papelaria e escritório.
-                      Aqui, você encontra desde os artigos essenciais do dia a dia até itens exclusivos e personalizados, 
-                     perfeitos para inspirar a sua rotina e dar um toque especial aos seus projetos.</p>
-                  <div class="read_bt_1"><a href="about2.html">Leia Mais</a></div>
+               <div class="col-md-8">
+                  <div class="mail_main">
+                     <h3 class="newsletter_text">Fique por dentro do Planeta Papel</h3>
+                     <div class="form-group">
+                        <textarea class="update_mail" placeholder="Coloque seu E-mail" rows="5" id="comment" name="Enter Your Email"></textarea>
+                        <div class="subscribe_bt"><a href="#">Inscreva-se</a></div>
+                     </div>
+                  </div>
+                  <div class="footer_social_icon">
+                     <h3 class="newsletter_text">Contatos</h3>
+                     <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=5585991707925"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:planetapapelpapelariars@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/daniolivem/projeto-integrador-papelaria"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- about sectuion end -->
+      <!-- contact section end -->
       <!-- copyright section start -->
+      <div class="copyright_section">
 <div class="copyright_section margin_top90">
             <div class="container">
                <p class="copyright_text">
