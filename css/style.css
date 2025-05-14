@@ -610,8 +610,8 @@ button {
 }
 
 .seemore_bt a:hover {
-    background-color: #1e1e1e;
-    color: #faf8f9;
+    color: #252525;
+    background-color: #faf8f9;
 }
 
 /* vini: carrossel de itens da loja */
@@ -1062,8 +1062,8 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 #main_slider .carousel-control-next:hover,
 #main_sl695ider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
-    background-color: #1e1e1e;
-    color: #fff;
+    color: #252525;
+    background-color: #faf8f9;
 }
 
 
