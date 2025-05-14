@@ -210,7 +210,7 @@ button {
 }
 
 
-/* header section start */
+/* header section start - Caco*/
 
 .header_section {
     width: 100%;
@@ -263,40 +263,6 @@ button {
     padding: 10px 0px;
 }
 
-#promocao {
-    width: 50%;
-    margin-left: auto;
-    margin-bottom: 350px;
-    margin-top: -380px;
-    background-color: aquamarine;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#promocao .h6 {
-    display: block;
-    margin-left: 50px;
-    justify-content: center;
-}
-
-@media (max-width: 800px){
-    #promocao {
-        display: inline-flex;
-        align-items: center;
-        position: relative;
-        left: 0%;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    #promocao .h6 {
-        display: inline-block;
-        margin-left: 5px;
-
-    }
-}
 
 .login_bt a {
     font-size: 16px;
@@ -322,7 +288,7 @@ button {
 /* header section end */
 
 
-/* banner section start */
+/* banner section start - Caco*/
 
 .banner_section {
     width: 100%;
@@ -400,7 +366,7 @@ button {
 /* banner section end */
 
 
-/* about section start */
+/* about section start - Anderson */
 
 .about_section {
     width: 100%;
@@ -716,21 +682,93 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     color: #8800ff;
 }
 
-#slides .slide_1 {
+/* Dani */
+#promocao {
+    width: 40%;
+    margin-left: auto;
+    margin-bottom: 200px;
+    margin-top: -380px;
+    /* width: 30%; */
     display: flex;
-    background: url('../images/produtos/cadernos-mochilas/cadpromo.png') no-repeat;
-    background-size: contain; 
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#promocao .h6 {
+    display: block;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+@media (max-width: 800px){
+    #promocao {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        left: 0%;
+        width: 100%;
+        margin-bottom: 15px;
     }
 
-#slides .slide_2 {
+    #promocao .h6 {
+        display: inline-block;
+        margin-left: 5px;
+
+    }
+}
+/* Dani */
+#slides .slide_c1 {
     display: flex;
-    background: #4eb3d4;
+    background: url('../images/produtos/cadernos-mochilas/cadpromo.png') no-repeat;
+    background-size: contain;
 }
 
-#slides .slide_3 {
+#slides .slide_c2 {
     display: flex;
-    background-color: #111111;
+    background: url('../images/produtos/cadernos-mochilas/cadpromo1.png') no-repeat;
+    background-size: contain;
 }
+
+#slides .slide_c3 {
+    display: flex;
+    background: url('../images/produtos/cadernos-mochilas/cadpromo3.png') no-repeat;
+    background-size: contain;
+}
+
+#slides .slide_e1 {
+    display: flex;
+    background: url('../images/produtos/escrita-deco/unipin2.webp') no-repeat;
+    background-size: contain;
+}
+#slides .slide_e2 {
+    display: flex;
+    background: url('../images/produtos/escrita-deco/unipin.jpg') no-repeat;
+    background-size: contain;
+}
+
+#slides .slide_e3 {
+    display: flex;
+    background: url('../images/produtos/escrita-deco/sakura.png') no-repeat;
+    background-size: contain;
+}
+#slides .slide_p1 {
+    display: flex;
+    background: url('../images/produtos/pintura-arte/promoa1.jpg') no-repeat;
+    background-size: contain;
+}
+#slides .slide_p2 {
+    display: flex;
+    background: url('../images/produtos/pintura-arte/promoa2.jpg') no-repeat;
+    background-size: contain;
+}
+
+#slides .slide_p3 {
+    display: flex;
+    background: url('../images/produtos/pintura-arte/promoa3.webp') no-repeat;
+    background-size: contain;
+}
+
+
 
 .slide-content {
     padding: 35%; /*vini: por algum motivo aumenta o tamanho em altura*/
