@@ -445,7 +445,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color:#ec5f85;
+    color: #373736;
     margin-left: 0px;
     text-align: justify;
 }
@@ -475,8 +475,8 @@ button {
 }
 
 .read_bt_1 a:hover {
-    background-color: #1e1e1e;
-    color: #faf8f9;
+    color: #252525;
+    background-color: #faf8f9;
 }
 
 
