@@ -445,7 +445,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color:#ec5f85;
+    color: #373736;
     margin-left: 0px;
     text-align: justify;
 }
@@ -475,8 +475,8 @@ button {
 }
 
 .read_bt_1 a:hover {
-    background-color: #1e1e1e;
-    color: #faf8f9;
+    color: #252525;
+    background-color: #faf8f9;
 }
 
 
@@ -610,8 +610,8 @@ button {
 }
 
 .seemore_bt a:hover {
-    background-color: #1e1e1e;
-    color: #faf8f9;
+    color: #252525;
+    background-color: #faf8f9;
 }
 
 /* vini: carrossel de itens da loja */
@@ -1035,6 +1035,10 @@ faz parte do slide se mover todo ou parte dele(fim)*/
     text-align: center;
     margin-top: 10px;
 }
+.client_img img {
+    box-shadow: 1px 1px 20px 5px #ededec;
+    border-radius: 5px;
+    }
 
 #main_slider a.carousel-control-next {
     position: absolute;
@@ -1062,8 +1066,8 @@ faz parte do slide se mover todo ou parte dele(fim)*/
 #main_slider .carousel-control-next:hover,
 #main_sl695ider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
-    background-color: #1e1e1e;
-    color: #fff;
+    color: #252525;
+    background-color: #faf8f9;
 }
 
 
