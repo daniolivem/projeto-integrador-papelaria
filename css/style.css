@@ -627,7 +627,6 @@ button {
     /*place-items: center;*/
     /*vini: deixei comentado, pois o slider fica minusculo
     e vai impurrar alguns elementos de forma indesejável.*/
-    background-color: #ffffff;
 }
 
 @media (max-width: 800px){
@@ -637,8 +636,7 @@ button {
         height: 100%;
         max-width: 100%;
         max-height: 100%;
-        display: grid;
-        background-color: #ffffff;    
+        display: grid;    
     }
 }
 
