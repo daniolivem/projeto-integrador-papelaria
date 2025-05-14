@@ -1392,30 +1392,22 @@ textarea#comment.update_mail::placeholder {
        /*Carlos*/
 /* Estiliza o contêiner do botão */
 .botão {
-    width: 150px;  /* Define a largura fixa */
+    width: 150px;  
     margin: 0 auto;  /* Centraliza horizontalmente */
-    text-align: center;  /* Alinha o conteúdo ao centro */
+    text-align: center;  
     padding-top: 10px;  /* Espaçamento superior */
 }
 
 /* Estiliza o botão dentro do contêiner */
 .botão button {
-    width: 100%;
-    /* Ocupa toda a largura do contêiner */
-    float: left;
-    /* Alinha à esquerda (pode ser desnecessário aqui) */
+    width: 100%;  /* Ocupa toda a largura do contêiner */
+    float: left;  
     font-size: 16px;
-    /* Tamanho da fonte */
-    text-align: center;
-    /* Centraliza o texto dentro do botão */
-    border: 1px solid #fc95c4;
-    /* Borda rosa */
+    text-align: center;  /* Centraliza o texto dentro do botão */
+    border: 1px solid #fc95c4;  /* Borda rosa */
     color: #fc95c4;
-    /* Cor do texto rosa */
     padding: 8px 0px;
-    /* Espaçamento interno (vertical) */
     border-radius: 40px;
-    /* Bordas arredondadas */
     background-color: transparent;
 }
 
@@ -1423,7 +1415,6 @@ textarea#comment.update_mail::placeholder {
 .botão button:hover {
     background: linear-gradient(140deg, #fc95c4, #f9bfda, #fc95c4);
     color: #ffffff;
-    /* Cor do texto muda para cinza escura */
 }
 
 
@@ -1595,4 +1586,22 @@ textarea#comment.update_mail::placeholder {
    border: 2px solid #28a745;
    z-index: 100;
    display: none;
+}
+
+/* Adiciona o estilo para esse contador: */
+#contador-carrinho {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background-color: #fc95c4;
+  color: white;
+  font-size: 13px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  display: none; /* Começa oculto */
 }

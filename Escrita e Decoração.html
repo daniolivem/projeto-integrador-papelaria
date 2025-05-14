@@ -223,12 +223,13 @@
       </div>
       <!-- copyright section end -->
          <!--Carlos Aditando-->
-      <!-- Botão do carrinho flutuante -->
+      <!-- Ícone do carrinho flutuante -->
       <div class="carrinho-container" onclick="toggleCarrinho()">
          <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrinho">
+         <span id="contador-carrinho">0</span> <!-- ADICIONADO -->
       </div>
 
-   <!-- Painel do carrinho -->
+      <!-- Painel do carrinho -->
       <div class="carrinho-panel" id="carrinhoPanel">
          <h3>Carrinho</h3>
          <div class="carrinho-itens-container">
@@ -240,16 +241,16 @@
          <button onclick="finalizarCompra()" class="finalizarCompra">Finalizar Compra</button>
       </div>
 
-   <!-- Tela de sucesso de compra -->
-   <section id="compra-sucesso" class="mensagem-sucesso">
-   <div class="checkmark"></div>
-      <div class="message">Compra realizada com sucesso! 🎉 </div>
-      <div class="order-summary">
-         <h3>Resumo do Pedido</h3>
-         <ul id="resumo-pedido"></ul>
-         <p id="total-pedido"></p>
-      </div>
-   </section>
+      <!-- Tela de sucesso de compra -->
+      <section id="compra-sucesso" class="mensagem-sucesso">
+         <div class="checkmark"></div>
+         <div class="message">Compra realizada com sucesso! 🎉 </div>
+         <div class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            <ul id="resumo-pedido"></ul>
+            <p id="total-pedido"></p>
+         </div>
+      </section>
 
    <!-- Scripts no final do bodyy -->
 <!-- Javascript files-->
