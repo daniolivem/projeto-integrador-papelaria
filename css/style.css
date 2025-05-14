@@ -569,10 +569,10 @@ button {
 }
 
 .price_text {
-    width: 80px;
+    width: 100px;
     margin: 0 auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #373736;
     font-weight: bold;
     background: #fff;
