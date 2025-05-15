@@ -1430,7 +1430,7 @@ textarea#comment.update_mail::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     z-index: 1000;
 }
@@ -1451,7 +1451,7 @@ textarea#comment.update_mail::placeholder {
 }
 
 .carrinho-container:hover {
-    background-color: #68aca8;
+    background-color: #79b2cbff;
 }
 
 .carrinho-container img {
@@ -1467,7 +1467,7 @@ textarea#comment.update_mail::placeholder {
     width: 300px;
     height: 500px;
     background: linear-gradient(140deg, #faa6cc, #f8c5dd, #fc95c4);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
     display: none;
     flex-direction: column;
     padding: 15px;
@@ -1490,15 +1490,16 @@ textarea#comment.update_mail::placeholder {
 .item-carrinho button {
     background-color: transparent;
     border: none;
-    color: #ff0000;
-    padding: 4px 8px;
-    font-size: 17px;
+ /* color: #f78f89ff; */
+    margin-bottom: 5px;
+    padding: 0px 9px;
+    font-size: 13px;
     cursor: pointer;
 }
 
-.item-carrinho button:hover {
-    color: #800101;
-}
+/* .item-carrinho button:hover {
+    color: #bb3976;
+}  */
 
 /* Container dos itens no carrinho */
 .carrinho-itens-container {
@@ -1588,12 +1589,12 @@ textarea#comment.update_mail::placeholder {
    display: none;
 }
 
-/* Adiciona o estilo para esse contador: */
+/* Contador de itens */
 #contador-carrinho {
   position: absolute;
   top: 0px;
   right: 5px;
-  background-color: #fc95c4;
+  background-color: #f78f89ff;
   color: white;
   font-size: 13px;
   width: 20px;

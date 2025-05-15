@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
          itemDiv.classList.add("item-carrinho");
          itemDiv.innerHTML = `
             <span>${item.nome} - R$${item.preco.toFixed(2)}</span>
-            <button onclick="removerItem(${index})">X</button>
+            <button onclick="removerItem(${index})">🗑️</button>
          `;
          container.appendChild(itemDiv);
 
@@ -62,6 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
    };
 
    window.finalizarCompra = function () {
+      // Nada no carrinho
+      if (carrinho.length === 0) {
+      alert("Seu carrinho está vazio. Adicione ao menos um item para finalizar a compra.");
+      return; // Interrompe a função
+      }
+
       const resumo = document.getElementById("resumo-pedido");
       const totalPedido = document.getElementById("total-pedido");
       let total = 0;
